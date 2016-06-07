@@ -1,20 +1,14 @@
 package com.rest.client;
 
-import java.util.Arrays;
-
 import javax.ws.rs.core.MediaType;
 
 import org.apache.cxf.jaxrs.client.WebClient;
 import org.junit.Test;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.ResponseEntity;
 
 import com.rest.example.domain.MovieEntity;
 import com.rest.example.domain.MovieList;
 
-public class RestClientTest {
+public class CXFWebClientTest {
 	
 	@Test
 	public void test() {
