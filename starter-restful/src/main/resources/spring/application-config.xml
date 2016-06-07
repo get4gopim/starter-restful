@@ -25,12 +25,12 @@
             <entry key="xml" value="application/xml" />
             <entry key="json" value="application/json" />
         </jaxrs:extensionMappings>
-        <jaxrs:providers>
+        <!-- <jaxrs:providers>
         	<ref bean='jsonProvider' />       	
-        </jaxrs:providers>
+        </jaxrs:providers> -->
     </jaxrs:server>
     
-    <bean id="jsonProvider" class="org.codehaus.jackson.jaxrs.JacksonJsonProvider"/>    
+    <!-- <bean id="jsonProvider" class="org.codehaus.jackson.jaxrs.JacksonJsonProvider"/> -->
     
     <bean id="movieServiceImpl" class="com.rest.example.cxf.MovieServiceImpl" />
 

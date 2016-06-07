@@ -10,7 +10,7 @@ public class MovieList {
 	
 	private Collection<MovieEntity> listMovies;
 
-	@XmlElement(name="Movies")
+	@XmlElement(name="Movie")
 	public Collection<MovieEntity> getListMovies() {
 		return listMovies;
 	}

@@ -68,13 +68,13 @@
 		    <version>${cxf.version}</version>
 		</dependency>
 		
-		<!-- JSON support -->
+		<!-- JSON support 
 		<dependency>
             <groupId>org.codehaus.jackson</groupId>
             <artifactId>jackson-jaxrs</artifactId>
             <version>${jackson.version}</version>
-        </dependency>
-
+        </dependency> -->
+        
 		<!-- Logging -->
 		<dependency>
 			<groupId>log4j</groupId>
