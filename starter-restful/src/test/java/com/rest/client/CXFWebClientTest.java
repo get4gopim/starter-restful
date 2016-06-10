@@ -1,7 +1,6 @@
 package com.rest.client;
 
 import javax.ws.rs.HttpMethod;
-import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
@@ -39,10 +38,11 @@ public class CXFWebClientTest {
 		
 		//webclient.header("Authorization", getUsernameAndPasswordAsEncoded("admin", "admin"));
 		MovieEntity entity = new MovieEntity(3, "Welcome", "Welcome", "Welcome", "Welcome", 2016, "English");
-		Response response = webclient.post(entity, Response.class);
+		//Response response = webclient.post(entity, Response.class);
+		Response response = webclient.invoke(HttpMethod.POST, entity, Response.class);
 		
 		if (response != null) {
-			System.out.println("POST response : " + response);
+			System.out.println("POST response : " + response.getStatus());
 		}
 		
 	}
