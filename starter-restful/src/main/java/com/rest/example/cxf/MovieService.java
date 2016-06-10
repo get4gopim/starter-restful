@@ -25,8 +25,7 @@ public interface MovieService {
      MovieList getAllMovies();
 	 
 	 @GET
-	 @Path("/movies/{id}")
-	 @Produces("application/json")
+	 @Path("/movies/{id}")	 
 	 MovieEntity getMovie(@PathParam("id") Integer id);
 	 
 	 @POST
